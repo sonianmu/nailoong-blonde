@@ -1,0 +1,156 @@
+{
+ "highres": {
+  "removed_numerical_specks": 2,
+  "removed_speck_triangles": 16,
+  "euler": 2,
+  "voxel": 0.004,
+  "voxel_over_H": 0.0016,
+  "grid": [
+   433,
+   433,
+   401
+  ],
+  "narrow_band_blocks": 17024,
+  "triangles": 1089854,
+  "vertices": 544929
+ },
+ "unfold_vertices": 858,
+ "skin": {
+  "triangles": 199324,
+  "vertices": 99664,
+  "visible_triangles": 133071,
+  "boundary_edges": 0,
+  "non_manifold_edges": 0,
+  "components": 1,
+  "watertight": true,
+  "euler": 2,
+  "bbox_min": [
+   -0.5383,
+   -1.02,
+   -0.7233
+  ],
+  "bbox_max": [
+   0.7499,
+   0.4518,
+   0.5682
+  ],
+  "bbox_expected": {
+   "min": [
+    -0.7,
+    -1.1,
+    -0.82
+   ],
+   "max": [
+    0.9,
+    0.5,
+    0.7
+   ]
+  },
+  "bbox_ok": true,
+  "edge_lengths": {
+   "fine_hand_sockets_joints": {
+    "edges": 181293,
+    "mean": 0.004338817334511871,
+    "mean_over_H": 0.0017355269338047486,
+    "p95_over_H": 0.002091807410378342,
+    "limit_over_H": 0.003,
+    "ok": true
+   },
+   "head_arms": {
+    "edges": 55522,
+    "mean": 0.006835357794104634,
+    "mean_over_H": 0.0027341431176418534,
+    "p95_over_H": 0.003295592737782045,
+    "limit_over_H": 0.005,
+    "ok": true
+   },
+   "body": {
+    "edges": 33344,
+    "mean": 0.010225281126488364,
+    "mean_over_H": 0.004090112450595346,
+    "p95_over_H": 0.004895170751225838,
+    "limit_over_H": 0.008,
+    "ok": true
+   },
+   "hidden": {
+    "edges": 28827,
+    "mean": 0.020501931265654378,
+    "mean_over_H": 0.008200772506261752,
+    "p95_over_H": 0.009922566501396436,
+    "limit_over_H": null,
+    "ok": true
+   }
+  },
+  "curvature": {
+   "joint_edges": 181293,
+   "mean_curvature_abs_p99_joint": 59.70407174358683,
+   "curv_jump_rel_p99_joint": 0.17641438467029577,
+   "curv_jump_rel_max_joint": 2.5541732973819697,
+   "curv_jump_rel_p99_all": 0.09827420032627844,
+   "dihedral_deg_p99_joint": 12.479121787122642,
+   "dihedral_deg_max_joint": 179.8844218481237,
+   "dihedral_deg_p99_other": 6.592490574019015,
+   "dihedral_deg_max_other": 16.99955573223565,
+   "note": "rel = |H_i - H_j| * edge length (dimensionless); dihedral = angle between adjacent face normals. Shading normals come from the SDF gradient, so facets only matter on silhouettes."
+  },
+  "arm_body_min_gap": 0.009778075925043086,
+  "gap_design": 0.013,
+  "hand_eyeball_clearance": 0.003735282788725397,
+  "blend_radii": {
+   "finger_root_k": 0.018,
+   "finger_r": 0.0325,
+   "wrist_k": 0.07,
+   "wrist_r": 0.082,
+   "elbow_k": 0.07,
+   "elbow_r": 0.135,
+   "shoulder_k": 0.16,
+   "shoulder_r": 0.19,
+   "ratios": {
+    "finger": 0.5538461538461538,
+    "wrist": 0.853658536585366,
+    "elbow": 0.5185185185185185,
+    "shoulder": 0.8421052631578947
+   }
+  }
+ },
+ "offline_silhouette_iou": 0.9488600947786364,
+ "membrane_inward_ring_normals": {
+  "count": 4,
+  "where": "forearm/chest groove lip (hidden by the forearm)"
+ },
+ "membrane": {
+  "vertices": 34521,
+  "triangles": 69038,
+  "max_valence": 12,
+  "mean_edge": 0.012273905798792839,
+  "pinned": 2161,
+  "edge_targets": {
+   "fine": 0.0085,
+   "mid": 0.0135,
+   "body": 0.021,
+   "hidden": 0.036
+  },
+  "restore_range": [
+   150.0,
+   1100.0
+  ],
+  "collide_body": 3941,
+  "collide_eye": 1424
+ },
+ "render_binding": {
+  "max_distance_to_membrane": 0.023353392279242553,
+  "p99": 0.004791193696798943,
+  "max_residual_normal": 0.022672853799657555
+ },
+ "proxies": {
+  "arm_spheres": 68,
+  "eyeballs": 2
+ },
+ "droplets": {
+  "beads": 2200,
+  "streaks": 44,
+  "radius_min": 0.0014,
+  "radius_max": 0.005
+ },
+ "build_seconds": 44.2
+}

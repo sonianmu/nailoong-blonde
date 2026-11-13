@@ -1,0 +1,17 @@
+node_modules
+dist
+.venv
+__pycache__
+.DS_Store
+
+# task brief (private) and bulky QA / demo output
+PROMPT.md
+docs/screenshots/
+docs/demo/*
+!docs/demo/nailoong-demo-v7-cursor.mp4
+
+# third-party reference images (not redistributable) and dev previews
+reference/A_blonde_cover.png
+reference/B_fullbody.png
+reference/photo_A.png
+reference/_*.png

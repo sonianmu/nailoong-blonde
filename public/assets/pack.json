@@ -1,0 +1,238 @@
+{
+ "simRest": {
+  "dtype": "float32",
+  "shape": [
+   34521,
+   3
+  ],
+  "offset": 0
+ },
+ "simNormalRest": {
+  "dtype": "float32",
+  "shape": [
+   34521,
+   3
+  ],
+  "offset": 414256
+ },
+ "simTris": {
+  "dtype": "uint32",
+  "shape": [
+   69038,
+   3
+  ],
+  "offset": 828512
+ },
+ "simAdj": {
+  "dtype": "float32",
+  "shape": [
+   34521,
+   12
+  ],
+  "offset": 1656968
+ },
+ "simDist": {
+  "dtype": "float32",
+  "shape": [
+   34521,
+   12
+  ],
+  "offset": 3313976
+ },
+ "simRestore": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 4970984
+ },
+ "simStiff": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5109072
+ },
+ "simPinned": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5247160
+ },
+ "simGroup": {
+  "dtype": "uint8",
+  "shape": [
+   34521
+  ],
+  "offset": 5385248
+ },
+ "simCollideBody": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5419776
+ },
+ "simCollideEye": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5557864
+ },
+ "simRegionHand": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5695952
+ },
+ "simSocketW": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5834040
+ },
+ "simSocketEye": {
+  "dtype": "float32",
+  "shape": [
+   34521
+  ],
+  "offset": 5972128
+ },
+ "proxyIds": {
+  "dtype": "float32",
+  "shape": [
+   70,
+   24
+  ],
+  "offset": 6110216
+ },
+ "proxyOffset": {
+  "dtype": "float32",
+  "shape": [
+   70,
+   3
+  ],
+  "offset": 6116936
+ },
+ "proxyRadius": {
+  "dtype": "float32",
+  "shape": [
+   70
+  ],
+  "offset": 6117776
+ },
+ "proxyType": {
+  "dtype": "float32",
+  "shape": [
+   70
+  ],
+  "offset": 6118056
+ },
+ "proxyRest": {
+  "dtype": "float32",
+  "shape": [
+   70,
+   3
+  ],
+  "offset": 6118336
+ },
+ "skinTri": {
+  "dtype": "float32",
+  "shape": [
+   99664,
+   3
+  ],
+  "offset": 6119176
+ },
+ "skinBary": {
+  "dtype": "float32",
+  "shape": [
+   99664,
+   2
+  ],
+  "offset": 7315144
+ },
+ "skinResid": {
+  "dtype": "float32",
+  "shape": [
+   99664,
+   3
+  ],
+  "offset": 8112456
+ },
+ "skinNrm": {
+  "dtype": "float32",
+  "shape": [
+   99664,
+   3
+  ],
+  "offset": 9308424
+ },
+ "dropTri": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10504392
+ },
+ "dropBary": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   2
+  ],
+  "offset": 10531320
+ },
+ "dropResid": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10549272
+ },
+ "dropNrm": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10576200
+ },
+ "dropTan": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10603128
+ },
+ "dropPos": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10630056
+ },
+ "dropScale": {
+  "dtype": "float32",
+  "shape": [
+   2244,
+   3
+  ],
+  "offset": 10656984
+ },
+ "dropSeed": {
+  "dtype": "float32",
+  "shape": [
+   2244
+  ],
+  "offset": 10683912
+ }
+}

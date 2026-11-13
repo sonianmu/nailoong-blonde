@@ -1,0 +1,1239 @@
+{
+ "visual": {
+  "label": "final",
+  "gpu": {
+   "backend": "webgpu",
+   "physics": "gpu-membrane",
+   "rowCalibration": {
+    "readbackRow0": 0,
+    "readbackRow1": 1,
+    "readFlip": 0
+   },
+   "webgpuAdapter": {
+    "vendor": "apple",
+    "architecture": "metal-3",
+    "device": "",
+    "description": "",
+    "isFallbackAdapter": false
+   },
+   "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M6, Unspecified Version)"
+  },
+  "perfAtRest": {
+   "fps": 47.27292271534622,
+   "cpuFrameMs": 0.3575354572795332,
+   "backend": "webgpu",
+   "solver": "gpu-membrane"
+  },
+  "errors": [],
+  "silhouette_iou": 0.9520778967366482,
+  "row_edge_errors": {
+   "0.20": [
+    -0.0028,
+    0
+   ],
+   "0.25": [
+    -0.0028,
+    0.0095
+   ],
+   "0.30": [
+    -0.0027,
+    0.0135
+   ],
+   "0.35": [
+    -0.0068,
+    0.0055
+   ],
+   "0.40": [
+    -0.0299,
+    -0.0136
+   ],
+   "0.45": [
+    -0.0516,
+    -0.0163
+   ],
+   "0.50": [
+    -0.034,
+    -0.0177
+   ],
+   "0.55": [
+    0.0122,
+    -0.0054
+   ],
+   "0.60": [
+    0.0055,
+    0.0122
+   ],
+   "0.65": [
+    -0.0177,
+    0.0109
+   ],
+   "0.70": [
+    -0.0204,
+    0.0109
+   ],
+   "0.75": [
+    -0.0068,
+    0.0109
+   ],
+   "0.80": [
+    0.0027,
+    0.0109
+   ],
+   "0.85": [
+    0.0027,
+    0.0109
+   ],
+   "0.90": [
+    -0.0027,
+    0.0109
+   ],
+   "0.95": [
+    -0.0055,
+    0.0109
+   ]
+  },
+  "row_edge_worst": 0.051639130434782604,
+  "row_edge_mean_abs": 0.011775,
+  "landmark_errors_photo_widths": {
+   "head_top": 0.006807799708703143,
+   "head_top_v_only": 0.004111413043478259,
+   "eye_right": 0.00004626700366538694,
+   "eye_left": 0.02532167430131194,
+   "palm_center": 0.014600718447103991,
+   "wrist": 0.004360986999457592,
+   "elbow": 0.02609095721856473,
+   "belly_top": 0.03523235962432181,
+   "belly_top_v_only": 0.029831521739130413
+  },
+  "landmark_worst": 0.029831521739130413,
+  "landmark_keys_used": [
+   "head_top_v_only",
+   "eye_right",
+   "eye_left",
+   "palm_center",
+   "elbow",
+   "belly_top_v_only"
+  ],
+  "colors": {
+   "skin_lit_forehead": {
+    "ref": "#956320",
+    "render": "#AF7520",
+    "dE76": 11.54,
+    "dE2000": 8.22
+   },
+   "skin_bright_right_head": {
+    "ref": "#AA702A",
+    "render": "#AF7421",
+    "dE76": 5.67,
+    "dE2000": 2.58
+   },
+   "skin_shoulder_right": {
+    "ref": "#D0973D",
+    "render": "#B57E25",
+    "dE76": 9.51,
+    "dE2000": 8.16
+   },
+   "skin_shadow_left_shoulder": {
+    "ref": "#665240",
+    "render": "#7F5738",
+    "dE76": 13.75,
+    "dE2000": 8.14
+   },
+   "skin_arm": {
+    "ref": "#B57927",
+    "render": "#A66B1C",
+    "dE76": 5.61,
+    "dE2000": 5.32
+   },
+   "belly_centre": {
+    "ref": "#8B694C",
+    "render": "#825D3D",
+    "dE76": 5.45,
+    "dE2000": 4.5
+   },
+   "belly_upper": {
+    "ref": "#70563D",
+    "render": "#845E3E",
+    "dE76": 8.51,
+    "dE2000": 5.63
+   },
+   "hand_palm": {
+    "ref": "#533719",
+    "render": "#523215",
+    "dE76": 2.94,
+    "dE2000": 2.27
+   },
+   "hand_dark": {
+    "ref": "#593D1D",
+    "render": "#4A2D13",
+    "dE76": 7.42,
+    "dE2000": 5.55
+   },
+   "skin_head_top": {
+    "ref": "#C48E3A",
+    "render": "#C69133",
+    "dE76": 4.28,
+    "dE2000": 1.88
+   },
+   "skin_lower_right": {
+    "ref": "#93652A",
+    "render": "#8F5914",
+    "dE76": 8.04,
+    "dE2000": 4.43
+   },
+   "wall_top_left": {
+    "ref": "#554A41",
+    "render": "#51463A",
+    "dE76": 2.65,
+    "dE2000": 2.19
+   },
+   "wall_top_mid": {
+    "ref": "#534A43",
+    "render": "#55493D",
+    "dE76": 3.54,
+    "dE2000": 2.68
+   },
+   "wall_left_mid": {
+    "ref": "#595046",
+    "render": "#4F4439",
+    "dE76": 5.16,
+    "dE2000": 4.14
+   },
+   "wall_right_top": {
+    "ref": "#514B47",
+    "render": "#52473B",
+    "dE76": 5.89,
+    "dE2000": 4.64
+   }
+  },
+  "color_dE2000_max": 8.215248107910156,
+  "color_dE2000_mean": 4.689262223243714,
+  "tiles": {
+   "vertical_lines": [
+    0.0217,
+    0.2092,
+    0.3995,
+    0.5897,
+    0.7826,
+    0.9755
+   ],
+   "horizontal_lines_in_widths": [
+    0.1332,
+    0.3302,
+    0.5245,
+    0.716,
+    0.9062,
+    1.0938,
+    1.2799
+   ],
+   "pitch_x": 0.1907608695652174,
+   "pitch_y": 0.19112318840579712,
+   "pitch_x_rel_std": 0.0106599925549115,
+   "pitch_y_rel_std": 0.01954078495553392,
+   "reference_pitch": 0.19429347826086957,
+   "tile_centre_luminance_max_neighbour_jump": 0.028447176424623112,
+   "tiles_sampled": 30
+  },
+  "layout": {
+   "title": {
+    "box": [
+     0.318,
+     0.691,
+     0.039,
+     0.13
+    ],
+    "ref": [
+     0.3179,
+     0.6917,
+     0.0395,
+     0.1301
+    ],
+    "max_err": 0.0006780354706685809
+   },
+   "advisory": {
+    "box": [
+     0.4435,
+     0.5585,
+     0.896,
+     0.9645
+    ],
+    "ref": [
+     0.4434,
+     0.5587,
+     0.8958,
+     0.9646
+    ],
+    "max_err": 0.00022343324250684304
+   },
+   "photo": {
+    "box": [
+     0.2495,
+     0.752,
+     0.151,
+     0.875
+    ],
+    "ref": [
+     0.2497,
+     0.7517,
+     0.1512,
+     0.8747
+    ],
+    "max_err": 0.00034059945504083533
+   }
+  },
+  "layout_worst": 0.0006780354706685809,
+  "pass": {
+   "iou>=0.85": true,
+   "landmarks<=0.03": true,
+   "dE<=10": true,
+   "layout<=0.01": true
+  }
+ },
+ "model": {
+  "highres": {
+   "removed_numerical_specks": 2,
+   "removed_speck_triangles": 16,
+   "euler": 2,
+   "voxel": 0.004,
+   "voxel_over_H": 0.0016,
+   "grid": [
+    433,
+    433,
+    401
+   ],
+   "narrow_band_blocks": 17024,
+   "triangles": 1089854,
+   "vertices": 544929
+  },
+  "unfold_vertices": 858,
+  "skin": {
+   "triangles": 199324,
+   "vertices": 99664,
+   "visible_triangles": 133071,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "components": 1,
+   "watertight": true,
+   "euler": 2,
+   "bbox_min": [
+    -0.5383,
+    -1.02,
+    -0.7233
+   ],
+   "bbox_max": [
+    0.7499,
+    0.4518,
+    0.5682
+   ],
+   "bbox_expected": {
+    "min": [
+     -0.7,
+     -1.1,
+     -0.82
+    ],
+    "max": [
+     0.9,
+     0.5,
+     0.7
+    ]
+   },
+   "bbox_ok": true,
+   "edge_lengths": {
+    "fine_hand_sockets_joints": {
+     "edges": 181293,
+     "mean": 0.004338817334511871,
+     "mean_over_H": 0.0017355269338047486,
+     "p95_over_H": 0.002091807410378342,
+     "limit_over_H": 0.003,
+     "ok": true
+    },
+    "head_arms": {
+     "edges": 55522,
+     "mean": 0.006835357794104634,
+     "mean_over_H": 0.0027341431176418534,
+     "p95_over_H": 0.003295592737782045,
+     "limit_over_H": 0.005,
+     "ok": true
+    },
+    "body": {
+     "edges": 33344,
+     "mean": 0.010225281126488364,
+     "mean_over_H": 0.004090112450595346,
+     "p95_over_H": 0.004895170751225838,
+     "limit_over_H": 0.008,
+     "ok": true
+    },
+    "hidden": {
+     "edges": 28827,
+     "mean": 0.020501931265654378,
+     "mean_over_H": 0.008200772506261752,
+     "p95_over_H": 0.009922566501396436,
+     "limit_over_H": null,
+     "ok": true
+    }
+   },
+   "curvature": {
+    "joint_edges": 181293,
+    "mean_curvature_abs_p99_joint": 59.70407174358683,
+    "curv_jump_rel_p99_joint": 0.17641438467029577,
+    "curv_jump_rel_max_joint": 2.5541732973819697,
+    "curv_jump_rel_p99_all": 0.09827420032627844,
+    "dihedral_deg_p99_joint": 12.479121787122642,
+    "dihedral_deg_max_joint": 179.8844218481237,
+    "dihedral_deg_p99_other": 6.592490574019015,
+    "dihedral_deg_max_other": 16.99955573223565,
+    "note": "rel = |H_i - H_j| * edge length (dimensionless); dihedral = angle between adjacent face normals. Shading normals come from the SDF gradient, so facets only matter on silhouettes."
+   },
+   "arm_body_min_gap": 0.009778075925043086,
+   "gap_design": 0.013,
+   "hand_eyeball_clearance": 0.003735282788725397,
+   "blend_radii": {
+    "finger_root_k": 0.018,
+    "finger_r": 0.0325,
+    "wrist_k": 0.07,
+    "wrist_r": 0.082,
+    "elbow_k": 0.07,
+    "elbow_r": 0.135,
+    "shoulder_k": 0.16,
+    "shoulder_r": 0.19,
+    "ratios": {
+     "finger": 0.5538461538461538,
+     "wrist": 0.853658536585366,
+     "elbow": 0.5185185185185185,
+     "shoulder": 0.8421052631578947
+    }
+   }
+  },
+  "offline_silhouette_iou": 0.9488600947786364,
+  "membrane_inward_ring_normals": {
+   "count": 4,
+   "where": "forearm/chest groove lip (hidden by the forearm)"
+  },
+  "membrane": {
+   "vertices": 34521,
+   "triangles": 69038,
+   "max_valence": 12,
+   "mean_edge": 0.012273905798792839,
+   "pinned": 2161,
+   "edge_targets": {
+    "fine": 0.0085,
+    "mid": 0.0135,
+    "body": 0.021,
+    "hidden": 0.036
+   },
+   "restore_range": [
+    150,
+    1100
+   ],
+   "collide_body": 3941,
+   "collide_eye": 1424
+  },
+  "render_binding": {
+   "max_distance_to_membrane": 0.023353392279242553,
+   "p99": 0.004791193696798943,
+   "max_residual_normal": 0.022672853799657555
+  },
+  "proxies": {
+   "arm_spheres": 68,
+   "eyeballs": 2
+  },
+  "droplets": {
+   "beads": 2200,
+   "streaks": 44,
+   "radius_min": 0.0014,
+   "radius_max": 0.005
+  },
+  "build_seconds": 44.2
+ },
+ "interaction": {
+  "checks": [
+   {
+    "name": "real GPU (not SwiftShader)",
+    "ok": true,
+    "detail": "{\"backend\":\"webgpu\",\"physics\":\"gpu-membrane\",\"rowCalibration\":{\"readbackRow0\":0,\"readbackRow1\":1,\"readFlip\":0},\"webgpuAdapter\":{\"vendor\":\"apple\",\"architecture\":\"metal-3\",\"device\":\"\",\"description\":\"\",\"isFallbackAdapter\":false},\"webglRenderer\":\"ANGLE (Apple, ANGLE Metal Renderer: Apple M6, Unspecified Version)\"}"
+   },
+   {
+    "name": "headTop: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "headTop: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.163 ring=0.014 far=0.0000"
+   },
+   {
+    "name": "headTop: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00010 (limit 0.0125)"
+   },
+   {
+    "name": "headTop: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "headTop: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.006"
+   },
+   {
+    "name": "headTop: hand is not dragged along (no sticking)",
+    "ok": true,
+    "detail": "hand=0.000 vs local=0.163"
+   },
+   {
+    "name": "forehead: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "forehead: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.130 ring=0.019 far=0.0001"
+   },
+   {
+    "name": "forehead: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00011 (limit 0.0125)"
+   },
+   {
+    "name": "forehead: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "forehead: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.006"
+   },
+   {
+    "name": "forehead: hand is not dragged along (no sticking)",
+    "ok": true,
+    "detail": "hand=0.000 vs local=0.130"
+   },
+   {
+    "name": "cheekLeft: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "cheekLeft: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.093 ring=0.002 far=0.0000"
+   },
+   {
+    "name": "cheekLeft: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00008 (limit 0.0125)"
+   },
+   {
+    "name": "cheekLeft: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "cheekLeft: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.006"
+   },
+   {
+    "name": "cheekRight: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "cheekRight: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.104 ring=0.014 far=0.0000"
+   },
+   {
+    "name": "cheekRight: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00009 (limit 0.0125)"
+   },
+   {
+    "name": "cheekRight: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "cheekRight: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.006"
+   },
+   {
+    "name": "cheekRight: hand is not dragged along (no sticking)",
+    "ok": true,
+    "detail": "hand=0.000 vs local=0.104"
+   },
+   {
+    "name": "hand: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "hand: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.084 ring=0.032 far=0.0000"
+   },
+   {
+    "name": "hand: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00019 (limit 0.0125)"
+   },
+   {
+    "name": "hand: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "hand: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.02"
+   },
+   {
+    "name": "forearm: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "forearm: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.127 ring=0.003 far=0.0000"
+   },
+   {
+    "name": "forearm: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00010 (limit 0.0125)"
+   },
+   {
+    "name": "forearm: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "forearm: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.02"
+   },
+   {
+    "name": "belly: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "belly: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.174 ring=0.009 far=0.0000"
+   },
+   {
+    "name": "belly: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00010 (limit 0.0125)"
+   },
+   {
+    "name": "belly: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "belly: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.02"
+   },
+   {
+    "name": "side: grab hits the skin",
+    "ok": true,
+    "detail": "grabs=1"
+   },
+   {
+    "name": "side: local > ring > far (falloff over the surface)",
+    "ok": true,
+    "detail": "local=0.174 ring=0.010 far=0.0000"
+   },
+   {
+    "name": "side: residual after 3 s < 0.005 H",
+    "ok": true,
+    "detail": "residual=0.00018 (limit 0.0125)"
+   },
+   {
+    "name": "side: no NaN / reset",
+    "ok": true,
+    "detail": "resets=0"
+   },
+   {
+    "name": "side: skin vs hand spheres / hand vs eyeballs penetration below limit (sampled, read-back)",
+    "ok": true,
+    "detail": "maxPen=0.0000 limit=0.02"
+   },
+   {
+    "name": "ray-pick hits the deformed skin (a spot that is wall at rest hits the pulled-out skin)",
+    "ok": true,
+    "detail": "rest hit=none deformed hit=skin dist to dragged patch=0.040"
+   },
+   {
+    "name": "flick: 2+ visible decaying oscillations (firm rubber, v3.1), at rest within 2 s",
+    "ok": true,
+    "detail": "swings=3 (-0.087, 0.020, -0.008) settle=1.32 s"
+   },
+   {
+    "name": "long drag off-canvas: finite, saturated pull, no reset",
+    "ok": true,
+    "detail": "maxDisp=0.495"
+   },
+   {
+    "name": "window blur releases the grab",
+    "ok": true
+   },
+   {
+    "name": "pointercancel releases the grab",
+    "ok": true
+   },
+   {
+    "name": "15 rapid grabs: stable and settles",
+    "ok": true,
+    "detail": "residual=0.00030"
+   },
+   {
+    "name": "skin pulled out of the photo stays visible and grabbable on the paper",
+    "ok": true,
+    "detail": "pick before=false held=true pixel held=128,80,20 after=226,222,220"
+   },
+   {
+    "name": "touch drag deforms the belly",
+    "ok": true,
+    "detail": "disp=0.145"
+   },
+   {
+    "name": "multi-touch: two simultaneous grabs",
+    "ok": true,
+    "detail": "grabs=2"
+   },
+   {
+    "name": "touch end releases everything",
+    "ok": true
+   },
+   {
+    "name": "gaze aims at the pointer on and around the photo (screen direction error < 20°), within the 45° cone",
+    "ok": true,
+    "detail": "worst aim error=4.8° max cone=45.0° max swing=90.0°"
+   },
+   {
+    "name": "eyeballs never poke through the hand (hand membrane clearance > -0.004 = 0.0016 H, transient)",
+    "ok": true,
+    "detail": "rest=0.0101 min while dragging=0.0093"
+   },
+   {
+    "name": "droplets stay on the deformed skin (< 0.2 radius)",
+    "ok": true,
+    "detail": "worst=0.031 mean=0.002 radii (rest worst 0.025)"
+   },
+   {
+    "name": "violent drags: no NaN / reset, back at rest within 3 s",
+    "ok": true,
+    "detail": "maxDisp during=0.340 residual=0.00017"
+   },
+   {
+    "name": "violent drags: skin vs hand / hand vs eyeball penetration (sampled) < 0.02",
+    "ok": true,
+    "detail": "max=0.0037"
+   },
+   {
+    "name": "violent drags: eyelids never sink into the ball (lid clearance > -0.006)",
+    "ok": true,
+    "detail": "min=0.0032"
+   },
+   {
+    "name": "60 fps while dragging",
+    "ok": false,
+    "detail": "median frame interval 50.00 ms, CPU encode 0.77 ms"
+   },
+   {
+    "name": "no page errors",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "name": "fallback webgl2: boots, drags, settles",
+    "ok": true,
+    "detail": "backend=webgl2 solver=undefined local=0.078 residual=0.00234 errors=0"
+   }
+  ],
+  "zones": {
+   "headTop": {
+    "grabbedDuringHold": 1,
+    "local": 0.16296044437977214,
+    "ring": 0.014015012666405313,
+    "far": 0.000011241192618426285,
+    "handFollow": 3.472538263423151e-7,
+    "maxPenetration": 0,
+    "penetrationLimit": 0.006,
+    "residual": 0.000102436704760733,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "forehead": {
+    "grabbedDuringHold": 1,
+    "local": 0.13046390973435715,
+    "ring": 0.018833465710397422,
+    "far": 0.00014785236311351356,
+    "handFollow": 2.1675839346581617e-7,
+    "maxPenetration": 6.03894682038586e-8,
+    "penetrationLimit": 0.006,
+    "residual": 0.00011489406349519924,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "cheekLeft": {
+    "grabbedDuringHold": 1,
+    "local": 0.09319169882714216,
+    "ring": 0.002058255953485137,
+    "far": 0.000007704076893961831,
+    "handFollow": 1.2061214205138865e-7,
+    "maxPenetration": 0,
+    "penetrationLimit": 0.006,
+    "residual": 0.00008082556451401184,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "cheekRight": {
+    "grabbedDuringHold": 1,
+    "local": 0.10360775462708335,
+    "ring": 0.013989613292513393,
+    "far": 0.00003104939357529976,
+    "handFollow": 1.6127145827910883e-7,
+    "maxPenetration": 3.7028051999565825e-8,
+    "penetrationLimit": 0.006,
+    "residual": 0.00008949107197827087,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "hand": {
+    "grabbedDuringHold": 1,
+    "local": 0.08362685286407565,
+    "ring": 0.03210601669038261,
+    "far": 7.491420031557108e-7,
+    "handFollow": 0.08362853316978945,
+    "maxPenetration": 3.871734324811804e-8,
+    "penetrationLimit": 0.02,
+    "residual": 0.00018599780571719557,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "forearm": {
+    "grabbedDuringHold": 1,
+    "local": 0.12692076771671937,
+    "ring": 0.0031979323298935327,
+    "far": 0.0000010151928186014284,
+    "handFollow": 2.16747929167225e-7,
+    "maxPenetration": 0,
+    "penetrationLimit": 0.02,
+    "residual": 0.00009521485674224753,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "belly": {
+    "grabbedDuringHold": 1,
+    "local": 0.17350577038310586,
+    "ring": 0.008532077219098802,
+    "far": 0.000007763491999899351,
+    "handFollow": 1.6127145827910883e-7,
+    "maxPenetration": 0,
+    "penetrationLimit": 0.02,
+    "residual": 0.00009988327627745571,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   },
+   "side": {
+    "grabbedDuringHold": 1,
+    "local": 0.17401666710132424,
+    "ring": 0.01001501854923495,
+    "far": 0.000011526039019351424,
+    "handFollow": 1.6621760242695985e-7,
+    "maxPenetration": 0,
+    "penetrationLimit": 0.02,
+    "residual": 0.00017577590702244498,
+    "residualLimit": 0.0125,
+    "sleeping": false,
+    "resets": 0
+   }
+  },
+  "errors": [],
+  "gpu": {
+   "backend": "webgpu",
+   "physics": "gpu-membrane",
+   "rowCalibration": {
+    "readbackRow0": 0,
+    "readbackRow1": 1,
+    "readFlip": 0
+   },
+   "webgpuAdapter": {
+    "vendor": "apple",
+    "architecture": "metal-3",
+    "device": "",
+    "description": "",
+    "isFallbackAdapter": false
+   },
+   "webglRenderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M6, Unspecified Version)"
+  },
+  "softwareRenderer": false,
+  "pickDeformed": {
+   "hitAtRest": null,
+   "hitWhileDeformed": [
+    -0.48261045112144757,
+    -0.4821042254490465,
+    0.2178255840899097
+   ],
+   "distanceToDraggedPatch": 0.040134098668108804
+  },
+  "flick": {
+   "zone": "headTop",
+   "extrema": [
+    [
+     0.01,
+     -0.0866
+    ],
+    [
+     0.8,
+     0.0196
+    ],
+    [
+     1.04,
+     -0.008
+    ]
+   ],
+   "settleSeconds": 1.316,
+   "trace": [
+    [
+     0,
+     0
+    ],
+    [
+     0.04,
+     -0.0866
+    ],
+    [
+     0.08,
+     -0.0866
+    ],
+    [
+     0.12,
+     -0.0866
+    ],
+    [
+     0.16,
+     -0.0866
+    ],
+    [
+     0.2,
+     -0.0866
+    ],
+    [
+     0.24,
+     -0.0866
+    ],
+    [
+     0.29,
+     -0.0713
+    ],
+    [
+     0.33,
+     -0.0713
+    ],
+    [
+     0.37,
+     -0.0713
+    ],
+    [
+     0.41,
+     -0.0713
+    ],
+    [
+     0.45,
+     -0.0713
+    ],
+    [
+     0.49,
+     -0.0713
+    ],
+    [
+     0.53,
+     -0.0713
+    ],
+    [
+     0.57,
+     -0.0233
+    ],
+    [
+     0.61,
+     -0.0233
+    ],
+    [
+     0.65,
+     -0.0233
+    ],
+    [
+     0.69,
+     -0.0233
+    ],
+    [
+     0.73,
+     -0.0233
+    ],
+    [
+     0.77,
+     -0.0233
+    ],
+    [
+     0.81,
+     0.0196
+    ],
+    [
+     0.85,
+     0.0196
+    ],
+    [
+     0.9,
+     0.0196
+    ],
+    [
+     0.94,
+     0.0196
+    ],
+    [
+     0.98,
+     0.0196
+    ],
+    [
+     1.02,
+     0.0196
+    ],
+    [
+     1.06,
+     -0.008
+    ],
+    [
+     1.1,
+     -0.008
+    ],
+    [
+     1.14,
+     -0.008
+    ],
+    [
+     1.18,
+     -0.008
+    ],
+    [
+     1.22,
+     -0.008
+    ],
+    [
+     1.26,
+     -0.008
+    ],
+    [
+     1.3,
+     -0.008
+    ],
+    [
+     1.34,
+     0.0004
+    ],
+    [
+     1.38,
+     0.0004
+    ],
+    [
+     1.42,
+     0.0004
+    ],
+    [
+     1.47,
+     0.0004
+    ],
+    [
+     1.51,
+     0.0004
+    ],
+    [
+     1.55,
+     0.0004
+    ],
+    [
+     1.59,
+     0.0017
+    ],
+    [
+     1.63,
+     0.0017
+    ],
+    [
+     1.67,
+     0.0017
+    ],
+    [
+     1.71,
+     0.0017
+    ],
+    [
+     1.75,
+     0.0017
+    ],
+    [
+     1.79,
+     0.0017
+    ],
+    [
+     1.83,
+     0.0017
+    ],
+    [
+     1.87,
+     -0.0014
+    ],
+    [
+     1.91,
+     -0.0014
+    ],
+    [
+     1.95,
+     -0.0014
+    ],
+    [
+     1.99,
+     -0.0014
+    ],
+    [
+     2.03,
+     -0.0014
+    ],
+    [
+     2.07,
+     -0.0014
+    ],
+    [
+     2.11,
+     0.0006
+    ],
+    [
+     2.15,
+     0.0006
+    ],
+    [
+     2.19,
+     0.0006
+    ],
+    [
+     2.23,
+     0.0006
+    ],
+    [
+     2.27,
+     0.0006
+    ],
+    [
+     2.31,
+     0.0006
+    ],
+    [
+     2.35,
+     0.0006
+    ],
+    [
+     2.39,
+     0
+    ]
+   ]
+  },
+  "outOfFrame": {
+   "pickBefore": false,
+   "pickHeld": true,
+   "pixelHeld": [
+    128,
+    80,
+    20
+   ],
+   "pixelAfter": [
+    226,
+    222,
+    220
+   ]
+  },
+  "eyes": {
+   "restHandClearance": 0.010118291608931629,
+   "minHandClearanceWhileDragging": 0.009318254075478094,
+   "maxGazeOffsetDeg": 44.999998179513575,
+   "swingDeg": 89.99894729641538
+  },
+  "droplets": {
+   "rest": {
+    "worstInRadii": 0.025385013271366743,
+    "meanInRadii": 0.001445080709014123,
+    "samples": 300
+   },
+   "deformed": {
+    "worstInRadii": 0.03081508392522509,
+    "meanInRadii": 0.0018969461257047732,
+    "samples": 300
+   },
+   "counts": {
+    "skinTriangles": 199324,
+    "skinVertices": 99664,
+    "simVertices": 34521,
+    "simTriangles": 69038,
+    "beads": 2200,
+    "streaks": 44,
+    "drops": 2244
+   }
+  },
+  "violent": {
+   "drags": [
+    "cheekRight",
+    "cheekLeft",
+    "headTop",
+    "belly",
+    "hand",
+    "forehead",
+    "side",
+    "forearm"
+   ],
+   "maxDisp": 0.3402238716499903,
+   "maxPenetration": 0.0036648231677596857,
+   "minLidClearance": 0.003235990287561552,
+   "residual": 0.00017486799571056973,
+   "resets": 0,
+   "nan": false
+  },
+  "performance": {
+   "machine": "Apple M6 (this machine), headless Chromium, 900x900 viewport, DPR 1",
+   "backend": "webgpu",
+   "physics": "gpu-membrane",
+   "cpuEncodeMsMedian": 0.7650000005960464,
+   "cpuFrameMsMedian": 0.8890377587894799,
+   "fpsMedian": 19.307553463798364,
+   "medianFrameIntervalMs": 50,
+   "p95FrameIntervalMs": 66.66500000000815,
+   "gpuFrameMs": null,
+   "gpuNote": "GPU timestamp queries are not exposed in this configuration; GPU frame time not measured."
+  },
+  "fallbacks": {
+   "webgl2": {
+    "backend": "webgl2",
+    "local": 0.07753300785797143,
+    "fps": 44.05191135976477,
+    "cpuFrameMs": 1.5160517614243485,
+    "residual": 0.0023399362746851027,
+    "errors": []
+   }
+  }
+ }
+}

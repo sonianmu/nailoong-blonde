@@ -1,0 +1,24 @@
+:root { --paper: #e2dedb; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #cfcac6; overflow: hidden; overscroll-behavior: none; }
+body { display: grid; place-items: center; font-family: 'Inter Tight', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+/* the whole page is the square cover */
+.cover { position: relative; width: min(100vw, 100vh); height: min(100vw, 100vh); width: min(100dvw, 100dvh); height: min(100dvw, 100dvh); background: var(--paper); overflow: hidden; user-select: none; -webkit-user-select: none; }
+.paper { position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' seed='7'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.33  0 0 0 0 0.31  0 0 0 0.16 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='640'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='0.012 0.19' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.22 -0.03'/></filter><rect width='100%' height='100%' filter='url(%23f)'/></svg>"),
+    radial-gradient(120% 120% at 50% 45%, rgba(255,255,255,0.10), rgba(0,0,0,0.035));
+}
+/* photo window: measured from figure A (reference/landmarks.json) */
+.photo { position: absolute; left: 24.966%; top: 15.123%; width: 50.205%; height: 72.343%; background: #3a332d; pointer-events: none; }
+/* the canvas covers the whole cover: the character can be pulled out of the photograph onto the paper */
+#view { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; outline: none; }
+#view.over { cursor: grab; }
+#view.grabbing { cursor: grabbing; }
+.type { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.debug { position: fixed; top: 8px; right: 8px; width: 250px; padding: 10px 12px; background: rgba(20,18,16,0.86); color: #e8e2da; font: 11px/1.5 ui-monospace, Menlo, monospace; border-radius: 6px; z-index: 5; }
+.debug label { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 2px 0; }
+.debug input[type=range] { width: 120px; }
+.debug pre { margin: 6px 0 0; white-space: pre-wrap; color: #bdb3a6; }
+.debug h4 { margin: 0 0 6px; font-weight: 600; letter-spacing: 0.04em; }
