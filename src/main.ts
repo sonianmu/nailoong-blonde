@@ -5,6 +5,7 @@
 import './styles.css';
 import { Color, Vector2, Vector3 } from 'three/webgpu';
 import { loadAssets } from './assets/load.ts';
+import { loader } from './ui/loader.ts';
 import { Membrane } from './sim/membrane.ts';
 import { boundCPU, ringNormalsCPU } from './render/surface.ts';
 import { createSkin, skinUniforms } from './render/skin.ts';
@@ -23,13 +24,15 @@ async function boot() {
   const q = new URLSearchParams(location.search);
   const canvas = document.getElementById('view') as HTMLCanvasElement;
   const coverInfo = await buildCover(document.getElementById('type') as unknown as SVGSVGElement);
-  const assets = await loadAssets();
+  const assets = await loadAssets('./assets/', (p) => loader.progress(p * 0.8));
   const sj = assets.scene;
+  loader.progress(0.84, 'warming up the rubber');
   const stage = await createStage(canvas, sj, q.has('webgl'));
   const { renderer, camera, scene, pipeline } = stage;
 
   const mem = new Membrane(renderer, assets.membrane);
   await mem.calibrate();
+  loader.progress(0.92);
   const skin = createSkin(assets, mem);
   const eyes = new Eyes(sj.eyes, mem);
   const drops = createDroplets(assets, mem);
@@ -87,6 +90,7 @@ async function boot() {
     frameMs += (cpu - frameMs) * 0.1;
     if (dt > 0) fps += (1 / dt - fps) * 0.05;
     frames++;
+    if (frames === 4) loader.done();               // the first frames compile the pipelines; reveal once they are on screen
   };
   renderer.setAnimationLoop(frame);
 
@@ -237,6 +241,7 @@ async function boot() {
 
 boot().catch((err) => {
   console.error(err);
+  loader.fail('could not start in this browser');
   const d = document.createElement('pre');
   d.style.cssText = 'position:fixed;left:8px;bottom:8px;color:#a00;font:12px monospace;white-space:pre-wrap;max-width:90vw';
   d.textContent = 'Failed to start: ' + (err?.message ?? err);

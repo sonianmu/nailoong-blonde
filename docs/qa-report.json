@@ -465,7 +465,7 @@
    {
     "name": "headTop: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00010 (limit 0.0125)"
+    "detail": "residual=0.00006 (limit 0.0125)"
    },
    {
     "name": "headTop: no NaN / reset",
@@ -490,12 +490,12 @@
    {
     "name": "forehead: local > ring > far (falloff over the surface)",
     "ok": true,
-    "detail": "local=0.130 ring=0.019 far=0.0001"
+    "detail": "local=0.131 ring=0.019 far=0.0001"
    },
    {
     "name": "forehead: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00011 (limit 0.0125)"
+    "detail": "residual=0.00004 (limit 0.0125)"
    },
    {
     "name": "forehead: no NaN / reset",
@@ -510,7 +510,7 @@
    {
     "name": "forehead: hand is not dragged along (no sticking)",
     "ok": true,
-    "detail": "hand=0.000 vs local=0.130"
+    "detail": "hand=0.000 vs local=0.131"
    },
    {
     "name": "cheekLeft: grab hits the skin",
@@ -525,7 +525,7 @@
    {
     "name": "cheekLeft: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00008 (limit 0.0125)"
+    "detail": "residual=0.00003 (limit 0.0125)"
    },
    {
     "name": "cheekLeft: no NaN / reset",
@@ -545,12 +545,12 @@
    {
     "name": "cheekRight: local > ring > far (falloff over the surface)",
     "ok": true,
-    "detail": "local=0.104 ring=0.014 far=0.0000"
+    "detail": "local=0.105 ring=0.014 far=0.0000"
    },
    {
     "name": "cheekRight: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00009 (limit 0.0125)"
+    "detail": "residual=0.00003 (limit 0.0125)"
    },
    {
     "name": "cheekRight: no NaN / reset",
@@ -565,7 +565,7 @@
    {
     "name": "cheekRight: hand is not dragged along (no sticking)",
     "ok": true,
-    "detail": "hand=0.000 vs local=0.104"
+    "detail": "hand=0.000 vs local=0.105"
    },
    {
     "name": "hand: grab hits the skin",
@@ -600,12 +600,12 @@
    {
     "name": "forearm: local > ring > far (falloff over the surface)",
     "ok": true,
-    "detail": "local=0.127 ring=0.003 far=0.0000"
+    "detail": "local=0.128 ring=0.003 far=0.0000"
    },
    {
     "name": "forearm: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00010 (limit 0.0125)"
+    "detail": "residual=0.00002 (limit 0.0125)"
    },
    {
     "name": "forearm: no NaN / reset",
@@ -625,12 +625,12 @@
    {
     "name": "belly: local > ring > far (falloff over the surface)",
     "ok": true,
-    "detail": "local=0.174 ring=0.009 far=0.0000"
+    "detail": "local=0.175 ring=0.009 far=0.0000"
    },
    {
     "name": "belly: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00010 (limit 0.0125)"
+    "detail": "residual=0.00005 (limit 0.0125)"
    },
    {
     "name": "belly: no NaN / reset",
@@ -650,12 +650,12 @@
    {
     "name": "side: local > ring > far (falloff over the surface)",
     "ok": true,
-    "detail": "local=0.174 ring=0.010 far=0.0000"
+    "detail": "local=0.177 ring=0.010 far=0.0000"
    },
    {
     "name": "side: residual after 3 s < 0.005 H",
     "ok": true,
-    "detail": "residual=0.00018 (limit 0.0125)"
+    "detail": "residual=0.00003 (limit 0.0125)"
    },
    {
     "name": "side: no NaN / reset",
@@ -670,12 +670,12 @@
    {
     "name": "ray-pick hits the deformed skin (a spot that is wall at rest hits the pulled-out skin)",
     "ok": true,
-    "detail": "rest hit=none deformed hit=skin dist to dragged patch=0.040"
+    "detail": "rest hit=none deformed hit=skin dist to dragged patch=0.041"
    },
    {
     "name": "flick: 2+ visible decaying oscillations (firm rubber, v3.1), at rest within 2 s",
     "ok": true,
-    "detail": "swings=3 (-0.087, 0.020, -0.008) settle=1.32 s"
+    "detail": "swings=3 (-0.137, 0.075, -0.027) settle=0.69 s"
    },
    {
     "name": "long drag off-canvas: finite, saturated pull, no reset",
@@ -693,17 +693,17 @@
    {
     "name": "15 rapid grabs: stable and settles",
     "ok": true,
-    "detail": "residual=0.00030"
+    "detail": "residual=0.00015"
    },
    {
     "name": "skin pulled out of the photo stays visible and grabbable on the paper",
     "ok": true,
-    "detail": "pick before=false held=true pixel held=128,80,20 after=226,222,220"
+    "detail": "pick before=false held=true pixel held=128,79,19 after=226,222,220"
    },
    {
     "name": "touch drag deforms the belly",
     "ok": true,
-    "detail": "disp=0.145"
+    "detail": "disp=0.176"
    },
    {
     "name": "multi-touch: two simultaneous grabs",
@@ -727,27 +727,27 @@
    {
     "name": "droplets stay on the deformed skin (< 0.2 radius)",
     "ok": true,
-    "detail": "worst=0.031 mean=0.002 radii (rest worst 0.025)"
+    "detail": "worst=0.052 mean=0.002 radii (rest worst 0.025)"
    },
    {
     "name": "violent drags: no NaN / reset, back at rest within 3 s",
     "ok": true,
-    "detail": "maxDisp during=0.340 residual=0.00017"
+    "detail": "maxDisp during=0.316 residual=0.00004"
    },
    {
     "name": "violent drags: skin vs hand / hand vs eyeball penetration (sampled) < 0.02",
     "ok": true,
-    "detail": "max=0.0037"
+    "detail": "max=0.0000"
    },
    {
     "name": "violent drags: eyelids never sink into the ball (lid clearance > -0.006)",
     "ok": true,
-    "detail": "min=0.0032"
+    "detail": "min=0.0033"
    },
    {
     "name": "60 fps while dragging",
     "ok": false,
-    "detail": "median frame interval 50.00 ms, CPU encode 0.77 ms"
+    "detail": "median frame interval 49.99 ms, CPU encode 1.07 ms"
    },
    {
     "name": "no page errors",
@@ -757,110 +757,110 @@
    {
     "name": "fallback webgl2: boots, drags, settles",
     "ok": true,
-    "detail": "backend=webgl2 solver=undefined local=0.078 residual=0.00234 errors=0"
+    "detail": "backend=webgl2 solver=undefined local=0.078 residual=0.00317 errors=0"
    }
   ],
   "zones": {
    "headTop": {
     "grabbedDuringHold": 1,
-    "local": 0.16296044437977214,
-    "ring": 0.014015012666405313,
-    "far": 0.000011241192618426285,
-    "handFollow": 3.472538263423151e-7,
+    "local": 0.16296102764100032,
+    "ring": 0.014020716247562444,
+    "far": 0.00001096449730328685,
+    "handFollow": 4.1671764156239447e-7,
     "maxPenetration": 0,
     "penetrationLimit": 0.006,
-    "residual": 0.000102436704760733,
+    "residual": 0.0000562168998004306,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "forehead": {
     "grabbedDuringHold": 1,
-    "local": 0.13046390973435715,
-    "ring": 0.018833465710397422,
-    "far": 0.00014785236311351356,
-    "handFollow": 2.1675839346581617e-7,
-    "maxPenetration": 6.03894682038586e-8,
+    "local": 0.13084586148483762,
+    "ring": 0.018959403222179032,
+    "far": 0.00012027759473982389,
+    "handFollow": 5.589636965414502e-7,
+    "maxPenetration": 0,
     "penetrationLimit": 0.006,
-    "residual": 0.00011489406349519924,
+    "residual": 0.000043549854052539016,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "cheekLeft": {
     "grabbedDuringHold": 1,
-    "local": 0.09319169882714216,
-    "ring": 0.002058255953485137,
-    "far": 0.000007704076893961831,
-    "handFollow": 1.2061214205138865e-7,
+    "local": 0.09324444289657828,
+    "ring": 0.00207885077339458,
+    "far": 0.000005394309129402496,
+    "handFollow": 1.6645836841548242e-7,
     "maxPenetration": 0,
     "penetrationLimit": 0.006,
-    "residual": 0.00008082556451401184,
+    "residual": 0.00002809231311653529,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "cheekRight": {
     "grabbedDuringHold": 1,
-    "local": 0.10360775462708335,
-    "ring": 0.013989613292513393,
-    "far": 0.00003104939357529976,
-    "handFollow": 1.6127145827910883e-7,
-    "maxPenetration": 3.7028051999565825e-8,
+    "local": 0.10468247004618328,
+    "ring": 0.01414587405175244,
+    "far": 0.00002381969520116855,
+    "handFollow": 2.0881791246983846e-7,
+    "maxPenetration": 2.3722573655460266e-8,
     "penetrationLimit": 0.006,
-    "residual": 0.00008949107197827087,
+    "residual": 0.00003399492143042027,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "hand": {
     "grabbedDuringHold": 1,
-    "local": 0.08362685286407565,
-    "ring": 0.03210601669038261,
-    "far": 7.491420031557108e-7,
-    "handFollow": 0.08362853316978945,
-    "maxPenetration": 3.871734324811804e-8,
+    "local": 0.08350785141257161,
+    "ring": 0.03213463250992424,
+    "far": 0.000005745251700885137,
+    "handFollow": 0.08350950645624576,
+    "maxPenetration": 4.25524679381617e-9,
     "penetrationLimit": 0.02,
-    "residual": 0.00018599780571719557,
+    "residual": 0.00018885641152125457,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "forearm": {
     "grabbedDuringHold": 1,
-    "local": 0.12692076771671937,
-    "ring": 0.0031979323298935327,
-    "far": 0.0000010151928186014284,
-    "handFollow": 2.16747929167225e-7,
+    "local": 0.12787403382933157,
+    "ring": 0.0032683296251143352,
+    "far": 0.0000011285527889892656,
+    "handFollow": 1.2061518303634918e-7,
     "maxPenetration": 0,
     "penetrationLimit": 0.02,
-    "residual": 0.00009521485674224753,
+    "residual": 0.000021126178761409766,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "belly": {
     "grabbedDuringHold": 1,
-    "local": 0.17350577038310586,
-    "ring": 0.008532077219098802,
-    "far": 0.000007763491999899351,
-    "handFollow": 1.6127145827910883e-7,
+    "local": 0.17497917856300801,
+    "ring": 0.008533770168015344,
+    "far": 0.0000049756415747086046,
+    "handFollow": 1.2061214205138865e-7,
     "maxPenetration": 0,
     "penetrationLimit": 0.02,
-    "residual": 0.00009988327627745571,
+    "residual": 0.00004991223518650741,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
    },
    "side": {
     "grabbedDuringHold": 1,
-    "local": 0.17401666710132424,
-    "ring": 0.01001501854923495,
-    "far": 0.000011526039019351424,
-    "handFollow": 1.6621760242695985e-7,
+    "local": 0.17729373897444278,
+    "ring": 0.009674513429762001,
+    "far": 0.000004227115844060628,
+    "handFollow": 1.6645836841548242e-7,
     "maxPenetration": 0,
     "penetrationLimit": 0.02,
-    "residual": 0.00017577590702244498,
+    "residual": 0.000032631300959144995,
     "residualLimit": 0.0125,
     "sleeping": false,
     "resets": 0
@@ -888,29 +888,29 @@
   "pickDeformed": {
    "hitAtRest": null,
    "hitWhileDeformed": [
-    -0.48261045112144757,
-    -0.4821042254490465,
-    0.2178255840899097
+    -0.48251534768068466,
+    -0.4819540448346571,
+    0.21837384067892618
    ],
-   "distanceToDraggedPatch": 0.040134098668108804
+   "distanceToDraggedPatch": 0.041163051575372096
   },
   "flick": {
    "zone": "headTop",
    "extrema": [
     [
-     0.01,
-     -0.0866
+     0.06,
+     -0.1374
     ],
     [
-     0.8,
-     0.0196
+     0.29,
+     0.0753
     ],
     [
-     1.04,
-     -0.008
+     0.49,
+     -0.0272
     ]
    ],
-   "settleSeconds": 1.316,
+   "settleSeconds": 0.695,
    "trace": [
     [
      0,
@@ -918,239 +918,223 @@
     ],
     [
      0.04,
-     -0.0866
+     0
     ],
     [
-     0.08,
-     -0.0866
+     0.09,
+     -0.1374
     ],
     [
-     0.12,
-     -0.0866
+     0.13,
+     -0.1374
     ],
     [
-     0.16,
-     -0.0866
+     0.17,
+     -0.1374
     ],
     [
-     0.2,
-     -0.0866
+     0.22,
+     -0.1374
     ],
     [
-     0.24,
-     -0.0866
+     0.26,
+     -0.1374
     ],
     [
-     0.29,
-     -0.0713
+     0.31,
+     0.0753
     ],
     [
-     0.33,
-     -0.0713
+     0.35,
+     0.0753
     ],
     [
-     0.37,
-     -0.0713
+     0.39,
+     0.0753
     ],
     [
-     0.41,
-     -0.0713
+     0.44,
+     0.0753
     ],
     [
-     0.45,
-     -0.0713
+     0.48,
+     0.0753
     ],
     [
-     0.49,
-     -0.0713
-    ],
-    [
-     0.53,
-     -0.0713
+     0.52,
+     -0.0272
     ],
     [
      0.57,
-     -0.0233
+     -0.0272
     ],
     [
      0.61,
-     -0.0233
+     -0.0272
     ],
     [
      0.65,
-     -0.0233
+     -0.0272
     ],
     [
      0.69,
-     -0.0233
+     -0.0272
     ],
     [
-     0.73,
-     -0.0233
+     0.74,
+     0.0024
     ],
     [
-     0.77,
-     -0.0233
+     0.78,
+     0.0024
     ],
     [
-     0.81,
-     0.0196
+     0.82,
+     0.0024
     ],
     [
-     0.85,
-     0.0196
+     0.86,
+     0.0024
     ],
     [
-     0.9,
-     0.0196
+     0.91,
+     0.0024
     ],
     [
-     0.94,
-     0.0196
+     0.95,
+     0.0049
     ],
     [
-     0.98,
-     0.0196
+     0.99,
+     0.0049
     ],
     [
-     1.02,
-     0.0196
+     1.04,
+     0.0049
     ],
     [
-     1.06,
-     -0.008
+     1.08,
+     0.0049
     ],
     [
-     1.1,
-     -0.008
+     1.12,
+     0.0049
     ],
     [
-     1.14,
-     -0.008
+     1.17,
+     -0.0039
     ],
     [
-     1.18,
-     -0.008
+     1.21,
+     -0.0039
     ],
     [
-     1.22,
-     -0.008
+     1.25,
+     -0.0039
     ],
     [
-     1.26,
-     -0.008
+     1.29,
+     -0.0039
     ],
     [
-     1.3,
-     -0.008
-    ],
-    [
-     1.34,
-     0.0004
+     1.33,
+     -0.0039
     ],
     [
      1.38,
-     0.0004
+     -0.0039
     ],
     [
      1.42,
-     0.0004
+     0.0016
     ],
     [
-     1.47,
-     0.0004
+     1.46,
+     0.0016
     ],
     [
      1.51,
-     0.0004
+     0.0016
     ],
     [
      1.55,
-     0.0004
+     0.0016
     ],
     [
      1.59,
-     0.0017
+     0.0016
     ],
     [
-     1.63,
-     0.0017
+     1.64,
+     -0.0001
     ],
     [
-     1.67,
-     0.0017
+     1.68,
+     -0.0001
     ],
     [
-     1.71,
-     0.0017
+     1.72,
+     -0.0001
     ],
     [
-     1.75,
-     0.0017
+     1.76,
+     -0.0001
     ],
     [
-     1.79,
-     0.0017
+     1.8,
+     -0.0001
     ],
     [
-     1.83,
-     0.0017
+     1.85,
+     -0.0004
     ],
     [
-     1.87,
-     -0.0014
+     1.89,
+     -0.0004
     ],
     [
-     1.91,
-     -0.0014
+     1.93,
+     -0.0004
     ],
     [
-     1.95,
-     -0.0014
+     1.98,
+     -0.0004
     ],
     [
-     1.99,
-     -0.0014
+     2.02,
+     -0.0004
     ],
     [
-     2.03,
-     -0.0014
+     2.06,
+     -0.0004
     ],
     [
-     2.07,
-     -0.0014
-    ],
-    [
-     2.11,
-     0.0006
+     2.1,
+     0.0003
     ],
     [
      2.15,
-     0.0006
+     0.0003
     ],
     [
      2.19,
-     0.0006
+     0.0003
     ],
     [
      2.23,
-     0.0006
+     0.0003
     ],
     [
      2.27,
-     0.0006
+     0.0003
     ],
     [
      2.31,
-     0.0006
+     -0.0001
     ],
     [
      2.35,
-     0.0006
-    ],
-    [
-     2.39,
-     0
+     -0.0001
     ]
    ]
   },
@@ -1159,8 +1143,8 @@
    "pickHeld": true,
    "pixelHeld": [
     128,
-    80,
-    20
+    79,
+    19
    ],
    "pixelAfter": [
     226,
@@ -1170,9 +1154,9 @@
   },
   "eyes": {
    "restHandClearance": 0.010118291608931629,
-   "minHandClearanceWhileDragging": 0.009318254075478094,
-   "maxGazeOffsetDeg": 44.999998179513575,
-   "swingDeg": 89.99894729641538
+   "minHandClearanceWhileDragging": 0.009318266410862835,
+   "maxGazeOffsetDeg": 44.999997622592744,
+   "swingDeg": 89.9989053116619
   },
   "droplets": {
    "rest": {
@@ -1181,8 +1165,8 @@
     "samples": 300
    },
    "deformed": {
-    "worstInRadii": 0.03081508392522509,
-    "meanInRadii": 0.0018969461257047732,
+    "worstInRadii": 0.0518404909372693,
+    "meanInRadii": 0.0022547655770043416,
     "samples": 300
    },
    "counts": {
@@ -1206,10 +1190,10 @@
     "side",
     "forearm"
    ],
-   "maxDisp": 0.3402238716499903,
-   "maxPenetration": 0.0036648231677596857,
-   "minLidClearance": 0.003235990287561552,
-   "residual": 0.00017486799571056973,
+   "maxDisp": 0.3160942092015441,
+   "maxPenetration": 7.036608854274484e-8,
+   "minLidClearance": 0.0032746143105646663,
+   "residual": 0.00004187765035894143,
    "resets": 0,
    "nan": false
   },
@@ -1217,21 +1201,21 @@
    "machine": "Apple M6 (this machine), headless Chromium, 900x900 viewport, DPR 1",
    "backend": "webgpu",
    "physics": "gpu-membrane",
-   "cpuEncodeMsMedian": 0.7650000005960464,
-   "cpuFrameMsMedian": 0.8890377587894799,
-   "fpsMedian": 19.307553463798364,
-   "medianFrameIntervalMs": 50,
-   "p95FrameIntervalMs": 66.66500000000815,
+   "cpuEncodeMsMedian": 1.070000022649765,
+   "cpuFrameMsMedian": 1.3033573415928852,
+   "fpsMedian": 26.068902545885074,
+   "medianFrameIntervalMs": 49.99499999999534,
+   "p95FrameIntervalMs": 50,
    "gpuFrameMs": null,
    "gpuNote": "GPU timestamp queries are not exposed in this configuration; GPU frame time not measured."
   },
   "fallbacks": {
    "webgl2": {
     "backend": "webgl2",
-    "local": 0.07753300785797143,
-    "fps": 44.05191135976477,
-    "cpuFrameMs": 1.5160517614243485,
-    "residual": 0.0023399362746851027,
+    "local": 0.07755827173649796,
+    "fps": 49.4679555791681,
+    "cpuFrameMs": 2.1116367100155036,
+    "residual": 0.0031703120329791327,
     "errors": []
    }
   }
